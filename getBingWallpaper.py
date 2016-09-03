@@ -1,6 +1,5 @@
 
 import urllib.request
-# from bs4 import BeautifulSoup 
 import re
 import sys
 import win32gui,win32con,win32api
