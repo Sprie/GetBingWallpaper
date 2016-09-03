@@ -2,7 +2,7 @@
 Get bing.com's background picture everyday and use in my desktop.
 
 # 自动使用教程
-将getBingWallpaper.py下载下来。
+将getBingWallpaper.exe下载下来。
 右键桌面我的电脑点击管理
 
 选择 系统工具->任务计划程序->任务计划程序库 右键任务计划程序库，选择创建基本任务或创建任务，这里以创建基本任务为例
