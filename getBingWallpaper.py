@@ -111,11 +111,16 @@ def fun():
 			print("Set wallpaper succeed!")
 		else:
 			print("Don't find image link!")
-		
-		
+def checkDirExists(path):
+	if not os.path.exists(path):
+		os.makedirs(path)
+		print("文件夹创建成功")
+	else:
+		print("目录已存在")
 			
 if __name__ == "__main__":
-	
+	checkDirExists("H:\\BingWallpaper\\BMPImage")
+	checkDirExists("H:\\BingWallpaper\\wallpaper")
 	fun();
 
 
