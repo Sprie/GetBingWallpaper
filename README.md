@@ -11,7 +11,7 @@ Get bing.com's background picture everyday and use in my desktop.
 
 选择任务开始的时间，可以按天开始，也可以在计算机启动时开始都可以。这里选择按天开始。点击下一步
 
-填上每天的开始时间。下一步。
+填上每天的开始时间（最好不要设置为00:00：00）。下一步。
 
 选择启动程序，点击浏览。将下载下来的getBingWallpaper.exe文件选中，确定，点击下一步。
 
