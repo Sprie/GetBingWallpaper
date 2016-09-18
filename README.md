@@ -23,3 +23,5 @@ Get bing.com's background picture everyday and use in my desktop.
 
 # 手动使用教程 
 如果不需要每天程序自动启动，只想需要的时候更换下壁纸，那只需要把getBingWallpaper.exe下载下来，需要时点击然后稍等一会就可以了
+
+测试系统：Windows 10
