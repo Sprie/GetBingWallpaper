@@ -1,5 +1,5 @@
 # GetBingWallpaper
-Get bing.com's background picture everyday and use in my desktop.
+享受每日美丽的壁纸吧~
 
 # 自动使用教程
 将getBingWallpaper.exe下载下来。
