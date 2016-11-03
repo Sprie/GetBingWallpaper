@@ -1,10 +1,12 @@
 
 import urllib.request
+# from bs4 import BeautifulSoup 
 import re
 import sys
-import win32gui,win32con,win32api
 #图片处理库
 from PIL import Image 
+import win32gui,win32con,win32api
+
 import os
 
 
@@ -37,14 +39,14 @@ def setWallpaperFromBMP(imagepath):
 
 
 #链接到http://cn.bing.com/?mkt=zh-CN&mkt=zh-CN&mkt=zh-CN&mkt=zh-CN   获取图片地址
-def fun():
+def fun(path):
 
-	path = "H:\\BingWallpaper"
+	# path = "H:\\BingWallpaper"
 	# bmpPath = r'H:\bingWallpaper.bmp'
 	# jpgPath = r'H:\bingWallpaper.jpg'
 
 	try:
-		html = urllib.request.urlopen(r'http://cn.bing.com/?mkt=zh-CN&mkt=zh-CN&mkt=zh-CN&mkt=zh-CN');
+		html = urllib.request.urlopen(r'https://www.bing.com/?scope=web&FORM=MOZSBR&pc=MOZI');
 		data = html.read();
 		#soup = BeautifulSoup(data,'html.parser');
 	except:
@@ -105,11 +107,12 @@ def fun():
 				img = Image.open(imgPath)
 				img.save(bmpPath)
 				
-			# 将获取到的图片设置为桌面背景
-			set_wallpaper(bmpPath)
-			print("Set wallpaper succeed!")
+				# 将获取到的图片设置为桌面背景
+				set_wallpaper(bmpPath)
+				print("Set wallpaper succeed!")
 		else:
 			print("Don't find image link!")
+			
 def checkDirExists(path):
 	if not os.path.exists(path):
 		os.makedirs(path)
@@ -118,8 +121,12 @@ def checkDirExists(path):
 		print("目录已存在")
 			
 if __name__ == "__main__":
-	checkDirExists("H:\\BingWallpaper\\BMPImage")
-	checkDirExists("H:\\BingWallpaper\\wallpaper")
-	fun();
+	# 获取当前文件所在目录
+	pyPath =  os.path.dirname(os.path.realpath(__file__))
+	path = pyPath+"\BingWallpaper"
+	print(path)
+	checkDirExists(path+"\BMPImage")
+	checkDirExists(path+"\wallpaper")
+	fun(path);
 
 
