@@ -1,8 +1,12 @@
 # GetBingWallpaper
 享受网络上美丽的壁纸吧~
 
+# getBingWallpaper与getBingWallpaper-notSavePic的区别
+
+getBingWallpaper会把每次获取的图片** 保存 ** 起来，而getBingWallpaper-notSavePic在设置完壁纸后就会将图片删除，** 不保存 ** 图片，从而节省磁盘空间。
+
 # 自动使用教程
-将getBingWallpaper.exe下载下来。
+将getBingWallpaper.exe或getBingWallpaper-notSavePic.exe下载下来。
 右键桌面我的电脑点击管理
 
 选择 系统工具->任务计划程序->任务计划程序库 右键任务计划程序库，选择创建基本任务或创建任务，这里以创建基本任务为例
@@ -22,7 +26,7 @@
 最后，点击条件旁边的设置，勾选“如果过了计划开始时间，立刻启动任务“，这样就不怕程序消极怠工不运行啦，最后点击确定就完成啦。
 
 # 手动使用教程
-如果不需要每天程序自动启动，只想需要的时候更换下壁纸，那只需要把getBingWallpaper.exe下载下来，需要时点击然后稍等一会就可以了
+如果不需要每天程序自动启动，只想需要的时候更换下壁纸，那只需要把getBingWallpaper.exe或getBingWallpaper-notSavePic.exe下载下来，需要时点击然后稍等一会就可以了
 
 测试系统：Windows 10
 
