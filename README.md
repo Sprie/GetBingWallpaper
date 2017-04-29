@@ -3,7 +3,7 @@
 
 # getBingWallpaper与getBingWallpaper-notSavePic的区别
 
-getBingWallpaper会把每次获取的图片** 保存 ** 起来，而getBingWallpaper-notSavePic在设置完壁纸后就会将图片删除，** 不保存 ** 图片，从而节省磁盘空间。
+getBingWallpaper会把每次获取的图片 `保存` 起来，而getBingWallpaper-notSavePic在设置完壁纸后就会将图片删除，`不保存` 图片，从而节省磁盘空间。
 
 # 自动使用教程
 将getBingWallpaper.exe或getBingWallpaper-notSavePic.exe下载下来。
@@ -30,7 +30,7 @@ getBingWallpaper会把每次获取的图片** 保存 ** 起来，而getBingWallp
 
 测试系统：Windows 10
 
- ## ** 提示: **
+ ## `提示:`
 
 .exe文件仅支持64位操作系统，.py文件可以自己在32位电脑上打包成.exe文件。
 
