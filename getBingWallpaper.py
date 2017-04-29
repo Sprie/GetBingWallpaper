@@ -124,7 +124,7 @@ if __name__ == "__main__":
 	# 获取当前文件所在目录
 	pyPath =  os.path.dirname(os.path.realpath(__file__))
 	path = pyPath+"\BingWallpaper"
-	print(path)
+	# print(open("H:/BingWallpaper/test/testpic_1",'wb'))
 	checkDirExists(path+"\BMPImage")
 	checkDirExists(path+"\wallpaper")
 	fun(path);
